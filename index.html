@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Customer Lead Profiler — Sandeep Grover</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <style>
@@ -42,61 +41,32 @@ footer{text-align:center;padding:32px;color:var(--muted);font-size:.82rem;border
 </style>
 </head>
 <body>
-
 <nav>
   <a href="https://sandyyy123.github.io" class="nav-back">← Portfolio</a>
   <span class="nav-title">Customer Lead Profiler</span>
   <a href="https://github.com/Sandyyy123/customer-lead-profiler" target="_blank" class="nav-back" style="margin-left:auto">GitHub ↗</a>
 </nav>
-
 <div class="hero">
   <h1>Customer Lead Profiler</h1>
   <p>CRM export analysis pipeline: K-Means customer segmentation, buyer vs non-buyer analysis, geographic growth opportunity mapping. Multi-sheet Excel dashboard output.</p>
   <div class="badges"><span class="badge">K-Means</span> <span class="badge">scipy</span> <span class="badge">openpyxl</span></div>
   <div class="metric-bar">✦ Segmentation · churn analysis · geo mapping</div>
 </div>
-
 <div class="card">
   <div class="section-title">Interactive Demo</div>
   <div class="highlight">K-Means segmentation | Geo opportunity mapping | Excel dashboard</div>
   <p style="font-size:.82rem;color:#94a3b8;margin-bottom:16px">Customer Segment Profiles (K-Means, k=4)</p>
-  <div class="demo-container">
-<canvas id="myChart"></canvas>
-<script>
-new Chart(document.getElementById('myChart'), {
-  type: 'radar',
-  data: {
-    labels: ["Avg Order Value", "Purchase Freq", "Recency", "Churn Risk", "LTV", "Geography Score"],
-    datasets: [{"label":"Champions","data":[94, 89, 97, 8, 96, 78],"backgroundColor":"rgba(99,102,241,0.12)","borderColor":"rgba(99,102,241,0.7)","borderWidth":2,"pointRadius":3},{"label":"Loyalists","data":[71, 82, 74, 12, 83, 72],"backgroundColor":"rgba(139,92,246,0.10)","borderColor":"rgba(139,92,246,0.6)","borderWidth":2,"pointRadius":3},{"label":"At-Risk","data":[68, 41, 31, 78, 43, 68],"backgroundColor":"rgba(16,185,129,0.10)","borderColor":"rgba(16,185,129,0.5)","borderWidth":2,"pointRadius":3},{"label":"New Leads","data":[42, 23, 87, 34, 28, 91],"backgroundColor":"rgba(251,191,36,0.10)","borderColor":"rgba(251,191,36,0.5)","borderWidth":2,"pointRadius":3}]
-  },
-  options: {
-    responsive: true,
-    plugins: { legend: { labels: { color: '#94a3b8' } } },
-    scales: {
-      r: {
-        min: 0, max: 100,
-        grid: { color: 'rgba(255,255,255,0.07)' },
-        angleLines: { color: 'rgba(255,255,255,0.07)' },
-        ticks: { color: '#94a3b8', backdropColor: 'transparent', stepSize: 25 },
-        pointLabels: { color: '#94a3b8', font: { size: 11 } }
-      }
-    }
-  }
-});
-</script></div>
+  <div class="demo-container"><canvas id="myChart"></canvas><script>
+new Chart(document.getElementById('myChart'),{type:'radar',data:{labels:["Avg Order Value", "Purchase Freq", "Recency", "Churn Risk", "LTV", "Geography Score"],datasets:[{"label":"Champions","data":[94, 89, 97, 8, 96, 78],"backgroundColor":"rgba(99,102,241,0.1)","borderColor":"rgba(99,102,241,0.8)","borderWidth":2,"pointRadius":3},{"label":"Loyalists","data":[71, 82, 74, 12, 83, 72],"backgroundColor":"rgba(16,185,129,0.1)","borderColor":"rgba(16,185,129,0.8)","borderWidth":2,"pointRadius":3},{"label":"At-Risk","data":[68, 41, 31, 78, 43, 68],"backgroundColor":"rgba(251,191,36,0.1)","borderColor":"rgba(251,191,36,0.8)","borderWidth":2,"pointRadius":3},{"label":"New Leads","data":[42, 23, 87, 34, 28, 91],"backgroundColor":"rgba(239,68,68,0.1)","borderColor":"rgba(239,68,68,0.8)","borderWidth":2,"pointRadius":3}]},options:{responsive:true,plugins:{legend:{labels:{color:'#94a3b8'}}},scales:{r:{min:0,max:100,grid:{color:'rgba(255,255,255,0.07)'},angleLines:{color:'rgba(255,255,255,0.07)'},ticks:{color:'#94a3b8',backdropColor:'transparent',stepSize:25},pointLabels:{color:'#94a3b8',font:{size:11}}}}}});</script></div>
   <div class="stats-grid"><div class="stat-box"><span class="stat-value">8,431</span><span class="stat-label">Customers</span></div><div class="stat-box"><span class="stat-value">4</span><span class="stat-label">Segments</span></div><div class="stat-box"><span class="stat-value">12.3%</span><span class="stat-label">Champions</span></div><div class="stat-box"><span class="stat-value">18.7%</span><span class="stat-label">At-Risk</span></div></div>
 </div>
-
 <div class="card">
   <div class="section-title">Tech Stack</div>
   <div class="badges" style="margin-bottom:0"><span class="badge">K-Means</span> <span class="badge">scipy</span> <span class="badge">openpyxl</span></div>
 </div>
-
 <footer>
-  <p>Built by <a href="https://sandyyy123.github.io">Sandeep Grover</a> ·
-     <a href="https://github.com/Sandyyy123/customer-lead-profiler" target="_blank">GitHub Repo</a> ·
-     <a href="https://linkedin.com/in/sandeep-grover-b3192a16" target="_blank">LinkedIn</a></p>
+  <p>Built by <a href="https://sandyyy123.github.io">Sandeep Grover</a> &nbsp;·&nbsp;
+     <a href="https://github.com/Sandyyy123/customer-lead-profiler" target="_blank">View on GitHub</a></p>
 </footer>
-
 </body>
 </html>
